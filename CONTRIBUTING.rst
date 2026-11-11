@@ -114,9 +114,12 @@ Guidelines for writing code
 Writing and running tests
 +++++++++++++++++++++++++
 
-Tests are contained within the ``tests`` directory, and follow the same directory structure as the ``litestar`` module.
-If you are adding a test case, it should be located within the correct submodule of ``tests``. E.g., tests for
-``litestar/utils/sync.py`` reside in ``tests/utils/test_sync.py``.
+Unit tests are contained within the ``tests/unit`` directory
+and are organized to mirror the ``litestar`` module structure.
+Test modules use a ``test_`` prefix.
+
+For example, tests for ``litestar/utils/sync.py`` reside in
+``tests/unit/test_utils/test_sync.py``.
 
 The ``Makefile`` includes several commands for running tests:
 
